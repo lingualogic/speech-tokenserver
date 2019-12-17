@@ -45,12 +45,40 @@ gulp.task('install-dialogflow-credentials', function() {
 
 
 /**
+ * Erzeugt die Google-Credentials Datei
+ */
+
+gulp.task('install-google-credentials', function() {
+    try {
+        // pruefen auf vorhandene Google-Credentials Datei
+        fs.accessSync( 'credentials/google-credentials.js' );
+    } catch (e) {
+        return gulp.src( `google-credentials.js` )
+            .pipe( file( 'google-credentials.js', ''))
+            .pipe(inject.append( "/**\n" ))
+            .pipe(inject.append( " * Zugriffswerte fuer Google TTS und ASR\n" ))
+            .pipe(inject.append( " */\n" ))
+            .pipe(inject.append( "\n" ))
+            .pipe(inject.append( "\n" ))
+            .pipe(inject.append( "const GOOGLE_PRIVATE_KEY = '';\n" ))
+            .pipe(inject.append( "const GOOGLE_CLIENT_EMAIL = '';\n" ))
+            .pipe(inject.append( "const GOOGLE_SCOPE_URL = '';\n" ))
+            .pipe(inject.append( "const GOOGLE_WEB_URL = '';\n" ))
+            .pipe(inject.append( "\n" ))
+            .pipe(inject.append( "module.exports = { GOOGLE_PRIVATE_KEY, GOOGLE_CLIENT_EMAIL, GOOGLE_SCOPE_URL, GOOGLE_WEB_URL };\n" ))
+            .pipe( gulp.dest( 'credentials' ));
+    }
+});
+
+
+/**
  * Installiert alle benoetigten Dateien
  */
 
 gulp.task('install', (callback) => {
     runSequence(
         'install-dialogflow-credentials',
+        'install-google-credentials',
         callback
     );
 });

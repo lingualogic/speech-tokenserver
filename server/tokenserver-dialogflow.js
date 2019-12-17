@@ -36,7 +36,7 @@ if ( !dialogflowCredentials.DIALOGFLOW_PRIVATE_KEY ||
      !dialogflowCredentials.DIALOGFLOW_CLIENT_EMAIL || 
      !dialogflowCredentials.DIALOGFLOW_SCOPE_URL || 
      ! dialogflowCredentials.DIALOGFLOW_WEB_URL ) {
-    console.log('Error Tokenserver: fehlende Credentials');
+    console.log('Error Tokenserver: fehlende Dialogflow Credentials');
     return;
 }
 

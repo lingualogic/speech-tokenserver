@@ -8,7 +8,7 @@ Im Speech-Framework müssen die URL des Tokenservers und die Projekt-ID des Dial
 
 ## Letzte Version
 
-* 0.5.15.0001 Beta vom 13.10.2019 [Release Notizen](./CHANGELOG.md)
+* 0.5.16.0002 Beta vom 17.11.2019 [Release Notizen](./CHANGELOG.md)
 
 
 ## Voraussetzungen
@@ -43,12 +43,19 @@ danach werden alle NPM-Pakete für den Speech-Tokenserver mit folgendem Befehl i
 
 ## Start des Servers
 
-Der Tokenserver wird lokal mit folgendem Befehl gestartet:
+Der Tokenserver fuer Google wird lokal mit folgendem Befehl gestartet:
 
-    $ npm start
+    $ npm run start:google
+
+Der Tokenserver fuer Dialogflow wird lokal mit folgendem Befehl gestartet:
+
+    $ npm run start:dialogflow
 
 
 ## Bekannte Probleme
+
+Sollte der Frontend lokal nicht auf den Tokenserver zugreifen können, muss die URL eventuell von http://localhost:4200 auf http://127.0.0.1:4200 geändert werden oder umgekehrt. Manchmal
+muss auch der Port 4200 auf 8080 oder einen anderen Wert angepasst werden.
 
 
 ## Projektverantwortliche (LinguaLogic Team)

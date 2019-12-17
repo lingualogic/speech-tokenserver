@@ -1,13 +1,15 @@
 {
-  "name": "dialogflow-tokenserver",
-  "version": "0.5.15",
+  "name": "tokenserver",
+  "version": "0.5.16",
   "author": "Lingualogic Team",
   "license": "MIT",
-  "description": "Dialogflow Tokenserver",
-  "main": "server/tokenserver.js",
+  "description": "Google Tokenserver",
+  "main": "server/tokenserver-google.js",
   "scripts": {
     "postinstall": "gulp install",
-    "start": "node server/tokenserver",
+    "start": "node server/tokenserver-google",
+    "start:google": "node server/tokenserver-google",
+    "start:dialogflow": "node server/tokenserver-dialogflow",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
