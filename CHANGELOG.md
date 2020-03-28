@@ -1,6 +1,13 @@
 # Speech-Tokenserver Release Notizen
 
 
+## 0.5.18.0004 Release (28.03.2020)
+
+### Features
+
+* **Tokenserver:** Zusammenlegung von Google- und Dialogflow-Tokenserver
+
+
 ## 0.5.17.0003 Release (16.02.2020)
 
 ### Features
