@@ -8,7 +8,7 @@ Im Speech-Framework müssen die URL des Tokenservers und die Projekt-ID des Dial
 
 ## Letzte Version
 
-* 0.5.18.0004 Release vom 28.03.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.19.0005 Release vom 11.04.2020 [Release Notizen](./CHANGELOG.md)
 
 
 ## Voraussetzungen
