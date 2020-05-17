@@ -1,6 +1,13 @@
 # Speech-Tokenserver Release Notizen
 
 
+## 0.5.20.0006 Release (17.05.2020)
+
+### Fix
+
+* **Gulp4:** Umstellung von Gulp3 auf Gulp4, um Fehler unter Node 12.x zu vermeiden.
+
+
 ## 0.5.19.0005 Release (11.04.2020)
 
 

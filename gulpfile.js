@@ -14,7 +14,7 @@ const fs = require('fs');
 const gulp = require('gulp');
 const file = require('gulp-file');
 const inject = require('gulp-inject-string');
-const runSequence = require('run-sequence');
+const runSequence = require('gulp4-run-sequence');
 
 
 /**
@@ -25,8 +25,9 @@ gulp.task('install-dialogflow-credentials', function() {
     try {
         // pruefen auf vorhandene Dialogflow-Credentials Datei
         fs.accessSync( 'credentials/dialogflow-credentials.js' );
+        return gulp.src('*');
     } catch (e) {
-        return gulp.src( `dialogflow-credentials.js` )
+        return gulp.src( `dialogflow-credentials.js`, {allowEmpty: true })
             .pipe( file( 'dialogflow-credentials.js', ''))
             .pipe(inject.append( "/**\n" ))
             .pipe(inject.append( " * Zugriffswerte fuer Google Dialogflow V2\n" ))
@@ -52,8 +53,9 @@ gulp.task('install-google-credentials', function() {
     try {
         // pruefen auf vorhandene Google-Credentials Datei
         fs.accessSync( 'credentials/google-credentials.js' );
+        return gulp.src('*');
     } catch (e) {
-        return gulp.src( `google-credentials.js` )
+        return gulp.src( `google-credentials.js`, { allowEmpty: true })
             .pipe( file( 'google-credentials.js', ''))
             .pipe(inject.append( "/**\n" ))
             .pipe(inject.append( " * Zugriffswerte fuer Google TTS und ASR\n" ))
