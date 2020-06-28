@@ -8,7 +8,7 @@ Im Speech-Framework müssen die URL des Tokenservers und die Projekt-ID des Dial
 
 ## Letzte Version
 
-* 0.5.20.0006 Release vom 17.05.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.21.0007 Release vom 26.06.2020 [Release Notizen](./CHANGELOG.md)
 
 
 Diese Version ist verbunden mit: ancient-atoll-53491

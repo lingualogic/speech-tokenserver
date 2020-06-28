@@ -1,6 +1,8 @@
 # Speech-Tokenserver Release Notizen
 
 
+## 0.5.21.0007 Release (26.06.2020)
+
 ## 0.5.20.0006 Release (17.05.2020)
 
 ### Fix
