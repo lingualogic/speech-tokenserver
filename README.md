@@ -8,7 +8,7 @@ Im Speech-Framework müssen die URL des Tokenservers und die Projekt-ID des Dial
 
 ## Letzte Version
 
-* 0.5.21.0007 Release vom 26.06.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.23.0009 Release vom 10.07.2021 [Release Notizen](./CHANGELOG.md)
 
 
 Diese Version ist verbunden mit: ancient-atoll-53491
@@ -18,13 +18,13 @@ Diese Version ist verbunden mit: ancient-atoll-53491
 
 Wir haben den Speech-Tokenserver auf Mac OS X 10.14 getestet. Als Plattformen können eingesetzt werden:
 
-* Mac OS X >= 10.11
+* Mac OS X >= 10.14
 * Windows 10
-* aktuelles Linux (z.B. Ubuntu 18.04)
+* aktuelles Linux (z.B. Ubuntu 20.04)
 
 NodeJS muss installiert sein.
 
-* NodeJS >= 10.X und <= 12.X (LTS-Version)
+* NodeJS >= 12.X und <= 14.X (LTS-Version)
 
 
 ## Credentials

@@ -1,6 +1,13 @@
 # Speech-Tokenserver Release Notizen
 
 
+## 0.5.23.0009 Release (10.07.2021)
+
+### Fix
+
+Aktualisierung aller NPM-Packages.
+
+
 ## 0.5.22.0008 Release (31.08.2020)
 
 Versionsanpassung
